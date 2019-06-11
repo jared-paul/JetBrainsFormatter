@@ -19,6 +19,8 @@ Run the script by entering "bash format_files.sh" or "./format_files.sh" in your
 
 (the script will modify the format.properties file so git will think it was changed by you, just ignore this)
 
+The script will ask you to specify a project to format, if you enter nothing it will default to whatever "default_project" is set to in config.yml
+
 Done! now all of the specified directories/files should be formatted according to the style found in "format/team_format.xml"
 
 Updating:
