@@ -1,0 +1,20 @@
+A script to format code in specified folders/files using Phpstorms formatting tool
+
+Installation:
+
+clone this repo (visit the maru bitbucket and find marumatchbox/formatter) into the folder where you keep all of your dev projects
+
+define your Phpstorm's main bin folder (where phpstorm.sh is located) in the config file
+define your project folder in the config file
+
+specify the folders or files you want to format in the "directories" file 
+
+Use:
+
+cd into this folder (where this readme file is located)
+
+run the script by entering "bash formatter.sh" or "./formatter.sh" in your terminal
+
+done! now all your files should be formatted according to the style found in "format/team_format.xml"
+
+
