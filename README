@@ -2,19 +2,26 @@ A script to format code in specified folders/files using Phpstorms formatting to
 
 Installation:
 
-clone this repo into the folder where you keep all of your dev projects
+Clone this repo into the folder where you keep all of your dev projects
 
-define your Phpstorm's main bin folder (where phpstorm.sh is located) in the config file
-define your project folder in the config file
+Define your Phpstorm's main bin folder (where phpstorm.sh is located) in the config file
+Define your project folder in the config file
 
-specify the folders or files you want to format in the "directories" file 
+Specify the folders or files you want to format in the "directories" file 
+
+The default config values are based off my box so they should pretty much be the same for everyone
 
 Use:
 
 cd into the root (this current folder)
 
-run the script by entering "bash formatter.sh" or "./formatter.sh" in your terminal
+Run the script by entering "bash format_files.sh" or "./format_files.sh" in your terminal
 
-done! now all of the specified directories/files should be formatted according to the style found in "format/team_format.xml"
+(the script will modify the format.properties file so git will think it was changed by you, just ignore this)
 
+Done! now all of the specified directories/files should be formatted according to the style found in "format/team_format.xml"
 
+Updating:
+
+To update the formatter just run the main "format_files" script and it will auto update for you
+You can also run "git pull" to get the latest changes
