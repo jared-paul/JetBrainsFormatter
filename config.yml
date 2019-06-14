@@ -1,3 +1,3 @@
-phpstorm_directory="/snap/phpstorm/98/bin"
+phpstorm_directory="/snap/phpstorm/current/bin"
 projects_directory="$HOME/Dev"
 default_project="lissted-frontend"
