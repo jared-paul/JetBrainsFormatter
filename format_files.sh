@@ -1,8 +1,11 @@
 #!/bin/bash
 
+# absolute path to script so it can be used regardless of context
+SCRIPTDIR="$( cd "$( dirname "$0" )" && pwd )"
+
 # LOADING CONFIG START
-# relative path to config file
-config_file="config.yml"
+# absolute path to config file
+config_file="$SCRIPTDIR/config.yml"
 
 # the base directory where all your dev projects are hosted
 projects_directory=$2
@@ -38,17 +41,14 @@ project=""
 directories=""
 
 # relative path to directories file
-directories_file="directories.yml"
+directories_file="$SCRIPTDIR/directories.yml"
 
 # relative path to properties file
-properties_file="format.properties"
-
-# save absolute path of current working directory
-current_directory=$(pwd)
+properties_file="$SCRIPTDIR/format.properties"
 
 # set necessary idea config and system path in properties file
-config_path="$current_directory/instance_container/config"
-system_path="$current_directory/instance_container/system"
+config_path="$SCRIPTDIR/instance_container/config"
+system_path="$SCRIPTDIR/instance_container/system"
 
 sed -i "s@config_path@$config_path@g" $properties_file
 sed -i "s@system_path@$system_path@g" $properties_file
@@ -69,5 +69,5 @@ done < "$directories_file"
 
 printf "Formatting all files in $directories \n...\n"
 
-sh ./format.sh -r -s format/team_format.xml $directories
+sh $SCRIPTDIR/format.sh -r -s $SCRIPTDIR/format/team_format.xml $directories
 # FORMATTER END
