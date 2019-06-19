@@ -13,9 +13,9 @@ The default config values are based off my box so they should pretty much be the
 
 Use:
 
-cd into the root (this current folder)
+Run the script by entering "bash format_files.sh" or "./format_files.sh" in your terminal.
 
-Run the script by entering "bash format_files.sh" or "./format_files.sh" in your terminal
+Note: You don't need to cd to the folder containing the format_files.sh. You can run it from anywhere.
 
 (the script will modify the format.properties file so git will think it was changed by you, just ignore this)
 
