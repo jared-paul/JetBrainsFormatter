@@ -1,6 +1,6 @@
 A script to format code in specified folders/files using Phpstorms formatting tool
 
-#Installation:
+### Installation:
 
 Clone this repo into the folder where you keep all of your dev projects
 
@@ -11,7 +11,7 @@ Specify the folders or files you want to format in the "directories" file
 
 The default config values are based off my box so they should pretty much be the same for everyone
 
-#Use:
+### Use:
 
 Run the script by entering "bash format_files.sh" or "./format_files.sh" in your terminal.
 
@@ -23,7 +23,7 @@ The script will ask you to specify a project to format, if you enter nothing it 
 
 Done! now all of the specified directories/files should be formatted according to the style found in "format/team_format.xml"
 
-#Updating:
+### Updating:
 
 To update the formatter just run the main "format_files" script and it will auto update for you
 You can also run "git pull" to get the latest changes
